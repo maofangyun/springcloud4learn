@@ -35,6 +35,7 @@
     <modules>
         <module>eureka</module>
         <module>client</module>
+        <module>provider</module>
     </modules>
 
     <build>
