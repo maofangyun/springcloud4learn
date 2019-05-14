@@ -9,4 +9,7 @@ public interface Feign4Client {
 
     @RequestMapping(value = "/provide",method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
     String show();
+
+    @RequestMapping(value = "/get",method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    String find();
 }

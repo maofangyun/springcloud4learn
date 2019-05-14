@@ -16,4 +16,10 @@ public class ClientController {
         String show = feign4Client.show();
         return show;
     }
+
+    @RequestMapping(value = "/find")
+    public String test1(){
+        String find = feign4Client.find();
+        return find;
+    }
 }

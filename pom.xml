@@ -36,6 +36,8 @@
         <module>eureka</module>
         <module>client</module>
         <module>provider</module>
+        <module>hystrixDashboard</module>
+        <module>turbine</module>
     </modules>
 
     <build>

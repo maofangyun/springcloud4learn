@@ -12,7 +12,12 @@ public class Feign4ClientFallbackFactory implements FallbackFactory<Feign4Client
         return new Feign4Client() {
             @Override
             public String show() {
-                return "fallBack";
+                return "show方法fallBack";
+            }
+
+            @Override
+            public String find() {
+                return "find方法fallBack";
             }
         };
     }

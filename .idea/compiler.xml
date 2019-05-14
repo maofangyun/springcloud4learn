@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="client" />
         <module name="eureka" />
+        <module name="hystrixDashboard" />
         <module name="provider" />
+        <module name="turbine" />
       </profile>
     </annotationProcessing>
   </component>

@@ -12,4 +12,9 @@ public class ProvideController {
     public String test(HttpServletRequest request){
         return "提供provide服务！"+request.getServerPort();
     }
+
+    @RequestMapping("/get")
+    public String find(HttpServletRequest request){
+        return "提供find服务！"+request.getServerPort();
+    }
 }
