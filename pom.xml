@@ -38,6 +38,7 @@
         <module>provider</module>
         <module>hystrixDashboard</module>
         <module>turbine</module>
+        <module>config</module>
     </modules>
 
     <build>
