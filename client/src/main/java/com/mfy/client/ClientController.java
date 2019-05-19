@@ -29,7 +29,7 @@ public class ClientController {
         return find;
     }
 
-    @RequestMapping(value = "name")
+    @RequestMapping(value = "/name")
     public String name(){
         return name;
     }
