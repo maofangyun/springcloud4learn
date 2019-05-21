@@ -18,8 +18,9 @@ public class ClientController {
     private Feign4Client feign4Client;
 
     @RequestMapping(value = "/show")
-    public String test(){
+    public String test() throws InterruptedException {
         String show = feign4Client.show();
+        Thread.sleep(2000);
         return show;
     }
 

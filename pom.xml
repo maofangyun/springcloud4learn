@@ -39,6 +39,7 @@
         <module>hystrixDashboard</module>
         <module>turbine</module>
         <module>config</module>
+        <module>zuul</module>
     </modules>
 
     <build>

@@ -12,6 +12,7 @@
         <module name="hystrixDashboard" />
         <module name="provider" />
         <module name="turbine" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
   </component>
