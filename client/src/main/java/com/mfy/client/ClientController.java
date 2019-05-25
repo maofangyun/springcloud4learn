@@ -20,7 +20,6 @@ public class ClientController {
     @RequestMapping(value = "/show")
     public String test() throws InterruptedException {
         String show = feign4Client.show();
-        Thread.sleep(2000);
         return show;
     }
 
@@ -31,7 +30,7 @@ public class ClientController {
     }
 
     @RequestMapping(value = "/name")
-    public String name(){
+    public String name() {
         return name;
     }
 }

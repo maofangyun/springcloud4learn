@@ -35,6 +35,33 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--链路追踪-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+        <!--加入下面依赖之后，会发生不能程序运行的问题，原因未知-->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.squareup.okhttp3</groupId>-->
+            <!--<artifactId>okhttp</artifactId>-->
+            <!--<version>4.0.0-alpha01</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.squareup.okio/okio &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.squareup.okio</groupId>-->
+            <!--<artifactId>okio</artifactId>-->
+            <!--<version>2.2.2</version>-->
+        <!--</dependency>-->
     </dependencies>
 
 

@@ -15,5 +15,8 @@
         <module name="zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zipkin" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -9,7 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 public class ProvideController {
 
     @RequestMapping("/provide")
-    public String test(HttpServletRequest request){
+    public String test(HttpServletRequest request) throws InterruptedException {
+//        Thread.sleep(4000);
         return "提供provide服务！"+request.getServerPort();
     }
 
