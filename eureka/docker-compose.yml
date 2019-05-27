@@ -1,0 +1,23 @@
+version: "2"
+services:
+  eureka1:
+    hostname: eureka1             # 指定hostname
+    image: 958117446/eureka:1.0
+    networks:
+      - eureka-net
+    ports:
+      - "8001:8001"
+    environment:
+      - spring.profiles.active=eureka1
+  eureka2:
+    hostname: eureka2
+    image: 958117446/eureka:1.0
+    networks:
+      - eureka-net
+    ports:
+      - "8002:8002"
+    environment:
+      - spring.profiles.active=eureka2
+networks:
+  eureka-net:
+    driver: bridge

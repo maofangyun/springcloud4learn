@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: mfy
+      password: mao123
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+---
+spring:
+  profiles: eureka1
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: eureka1
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://mfy:mao123@eureka2:8002/eureka/
+---
+spring:
+  profiles: eureka2
+server:
+  port: 8002
+eureka:
+  instance:
+    hostname: eureka2
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://mfy:mao123@eureka1:8001/eureka/
