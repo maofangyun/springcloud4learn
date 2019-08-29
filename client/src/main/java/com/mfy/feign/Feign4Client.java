@@ -12,4 +12,7 @@ public interface Feign4Client {
 
     @RequestMapping(value = "/get",method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
     String find();
+
+    @RequestMapping(value = "/count",method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    int count();
 }

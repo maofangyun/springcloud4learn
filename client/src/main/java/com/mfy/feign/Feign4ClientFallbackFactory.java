@@ -19,6 +19,11 @@ public class Feign4ClientFallbackFactory implements FallbackFactory<Feign4Client
             public String find() {
                 return "find方法fallBack";
             }
+
+            @Override
+            public int count() {
+                return -1 ;
+            }
         };
     }
 }

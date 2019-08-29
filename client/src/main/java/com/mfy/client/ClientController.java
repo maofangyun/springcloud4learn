@@ -33,4 +33,9 @@ public class ClientController {
     public String name() {
         return name;
     }
+
+    @RequestMapping(value = "/count")
+    public int count() {
+        return feign4Client.count();
+    }
 }
